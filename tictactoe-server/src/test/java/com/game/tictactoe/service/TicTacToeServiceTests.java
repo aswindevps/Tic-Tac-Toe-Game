@@ -5,6 +5,7 @@ import com.game.tictactoe.entity.Board;
 import com.game.tictactoe.entity.Game;
 import com.game.tictactoe.entity.Move;
 import com.game.tictactoe.entity.Player;
+import com.game.tictactoe.exception.TicTacToeException;
 import com.game.tictactoe.repository.BoardRepository;
 import com.game.tictactoe.repository.GameRepository;
 import com.game.tictactoe.repository.PlayerRepository;
@@ -89,7 +90,7 @@ public class TicTacToeServiceTests {
     }
 
     @Test
-    public void testGetGame() {
+    public void testGetGame() throws TicTacToeException {
         Game game = new Game();
         Board board = new Board(3);
 
@@ -128,7 +129,7 @@ public class TicTacToeServiceTests {
     }
 
     @Test
-    public void testMakeMove() {
+    public void testMakeMove() throws TicTacToeException {
         Game game = new Game();
         Board board = new Board(3);
         // Player 1
@@ -171,7 +172,7 @@ public class TicTacToeServiceTests {
     }
 
     @Test
-    public void testMakeMove_win() {
+    public void testMakeMove_win() throws TicTacToeException {
         char[][] positions = new char[][] {
                 {'X', '\u0000', '\u0000'},
                 {'O', 'X', '\u0000'},
@@ -217,7 +218,7 @@ public class TicTacToeServiceTests {
     }
 
     @Test
-    public void testMakeMove_draw() {
+    public void testMakeMove_draw() throws TicTacToeException {
         char[][] positions = new char[][] {
                 {'X', 'X', 'O'},
                 {'O', 'O', 'X'},

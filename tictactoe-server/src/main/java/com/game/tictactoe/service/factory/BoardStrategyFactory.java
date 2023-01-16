@@ -4,5 +4,5 @@ import com.game.tictactoe.exception.TicTacToeException;
 import com.game.tictactoe.service.BoardStrategy;
 
 public interface BoardStrategyFactory {
-    BoardStrategy getStrategy(Integer size);
+    BoardStrategy getStrategy(Integer size) throws TicTacToeException;
 }

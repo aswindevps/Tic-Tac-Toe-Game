@@ -6,6 +6,6 @@ import com.game.tictactoe.exception.TicTacToeException;
 
 public interface TicTacToeService {
     Game createNewGame(Integer size);
-    Game getGame(Long id);
-    Game makeMove(Long id, Move move);
+    Game getGame(Long id) throws TicTacToeException;
+    Game makeMove(Long id, Move move) throws TicTacToeException;
 }
