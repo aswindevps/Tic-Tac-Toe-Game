@@ -30,7 +30,7 @@ public class TicTacToeControllerTests {
     private TicTacToeService ticTacToeService;
 
     @Test
-    public void testCreateGame() throws Exception {
+    public void testCreateNewGame() throws Exception {
         Game game = new Game();
         game.setId(1L);
         Integer boardSize = 3;
