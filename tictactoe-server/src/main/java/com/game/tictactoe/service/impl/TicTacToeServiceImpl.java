@@ -3,6 +3,7 @@ package com.game.tictactoe.service.impl;
 import com.game.tictactoe.constant.TicTacToeConstant;
 import com.game.tictactoe.entity.Board;
 import com.game.tictactoe.entity.Game;
+import com.game.tictactoe.entity.Move;
 import com.game.tictactoe.entity.Player;
 import com.game.tictactoe.repository.BoardRepository;
 import com.game.tictactoe.repository.GameRepository;
@@ -52,5 +53,15 @@ public class TicTacToeServiceImpl implements TicTacToeService {
         game.setCurrentPlayer(player1);
         game.setStatus(TicTacToeConstant.GAME_IN_PROGRESS);
         return gameRepository.save(game);
+    }
+
+    @Override
+    public Game getGame(Long id) {
+        return null;
+    }
+
+    @Override
+    public Game makeMove(Long id, Move move) {
+        return null;
     }
 }
