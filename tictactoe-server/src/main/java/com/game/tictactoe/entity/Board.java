@@ -7,6 +7,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OrderColumn;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -24,6 +25,7 @@ public class Board {
     @Getter
     @Setter
     @ElementCollection
+    @OrderColumn
     private char[][] positions;
 
     public Board() {}
