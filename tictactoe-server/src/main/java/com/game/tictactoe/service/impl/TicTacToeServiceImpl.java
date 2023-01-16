@@ -9,6 +9,7 @@ import com.game.tictactoe.repository.BoardRepository;
 import com.game.tictactoe.repository.GameRepository;
 import com.game.tictactoe.repository.PlayerRepository;
 import com.game.tictactoe.service.TicTacToeService;
+import com.game.tictactoe.service.factory.BoardStrategyFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,14 +18,16 @@ import java.util.List;
 @Service
 public class TicTacToeServiceImpl implements TicTacToeService {
 
+    private final BoardStrategyFactory boardStrategyFactory;
     private final GameRepository gameRepository;
     private final BoardRepository boardRepository;
     private final PlayerRepository playerRepository;
 
-    public TicTacToeServiceImpl(GameRepository gameRepository, BoardRepository boardRepository, PlayerRepository playerRepository) {
+    public TicTacToeServiceImpl(GameRepository gameRepository, BoardRepository boardRepository, PlayerRepository playerRepository, BoardStrategyFactory boardStrategyFactory) {
         this.gameRepository = gameRepository;
         this.boardRepository = boardRepository;
         this.playerRepository = playerRepository;
+        this.boardStrategyFactory = boardStrategyFactory;
     }
 
     @Override
