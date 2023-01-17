@@ -20,8 +20,8 @@ Overall, TicTacToe is a fun and easy-to-play game that can be enjoyed by players
 
 ## Clone Project
 
-`git clone git@github.com:aswindevps/MjAyMy1ERVYxLTAwMi9UaWNUYWNUb2U-.git`
-`cd MjAyMy1ERVYxLTAwMi9UaWNUYWNUb2U-`
+- `git clone git@github.com:aswindevps/MjAyMy1ERVYxLTAwMi9UaWNUYWNUb2U-.git`
+- `cd MjAyMy1ERVYxLTAwMi9UaWNUYWNUb2U-`
 
 ## Build & Run
 
