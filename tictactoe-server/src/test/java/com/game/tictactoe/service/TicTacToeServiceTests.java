@@ -212,7 +212,7 @@ public class TicTacToeServiceTests {
         Game updatedGame = ticTacToeService.makeMove(1L, move);
 
         assertEquals(TicTacToeConstant.PLAYER_1, updatedGame.getWinner().getSymbol());
-        assertEquals("Game won by player : X", updatedGame.getStatus());
+        assertEquals(TicTacToeConstant.GAME_WON, updatedGame.getStatus());
         assertNull(updatedGame.getCurrentPlayer());
         verify(gameRepository, times(1)).save(updatedGame);
     }
