@@ -24,6 +24,7 @@ public class Board {
 
     @Getter
     @Setter
+    @NotNull
     @ElementCollection
     @OrderColumn
     private char[][] positions;

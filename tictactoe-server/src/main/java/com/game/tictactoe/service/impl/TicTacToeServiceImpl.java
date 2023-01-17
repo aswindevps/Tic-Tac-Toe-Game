@@ -44,11 +44,13 @@ public class TicTacToeServiceImpl implements TicTacToeService {
         Player player1 = new Player();
         player1.setName("Player 1");
         player1.setSymbol(TicTacToeConstant.PLAYER_1);
+        player1.setColor("#b81515");
         player1 = playerRepository.save(player1);
 
         Player player2 = new Player();
         player2.setName("Player 2");
         player2.setSymbol(TicTacToeConstant.PLAYER_2);
+        player2.setColor("#6161e3");
         player2 = playerRepository.save(player2);
 
         List<Player> players = new ArrayList<>();
@@ -80,7 +82,7 @@ public class TicTacToeServiceImpl implements TicTacToeService {
         game.setStatus(TicTacToeConstant.GAME_IN_PROGRESS);
 
         if (boardStrategy.checkWin(board, game.getCurrentPlayer().getSymbol())) {
-            game.setStatus(TicTacToeConstant.GAME_WON + game.getCurrentPlayer().getSymbol());
+            game.setStatus(TicTacToeConstant.GAME_WON);
             game.setWinner(game.getCurrentPlayer());
             game.setCurrentPlayer(null);
         } else if (boardStrategy.checkDraw(board)) {

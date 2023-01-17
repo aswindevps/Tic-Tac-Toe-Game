@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Player {
@@ -16,9 +17,14 @@ public class Player {
 
     @Getter
     @Setter
+    @NotNull
     private char symbol;
 
     @Getter
     @Setter
     private String name;
+
+    @Getter
+    @Setter
+    private String color;
 }
