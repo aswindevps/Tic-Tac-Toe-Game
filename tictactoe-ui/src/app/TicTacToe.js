@@ -53,10 +53,10 @@ function TicTacToe() {
     <>
       <div className="App">
         <h1 className="AppHeader">Tic Tac Toe</h1>
-        {game && <h1 className="GameNumber">Game # {game.id}</h1>}
-        <div className="PlayerContainer">
-          {game &&
-            game.players.map((player, index) => {
+        <hr />
+        {game && (
+          <div className="PlayerContainer">
+            {game.players.map((player, index) => {
               return (
                 <div className="Player" key={player.symbol}>
                   <span>{player.name} : </span>{" "}
@@ -64,7 +64,8 @@ function TicTacToe() {
                 </div>
               );
             })}
-        </div>
+          </div>
+        )}
         <button
           className="StartButton"
           onClick={() => startGame()}

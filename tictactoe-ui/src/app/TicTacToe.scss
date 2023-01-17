@@ -3,22 +3,25 @@
     flex-direction: column;
     align-items: center;
 
-    .AppHeader {
-        font-size: 5rem;
-        margin-bottom: 0;
+    hr {
+        width: 100%;
+        margin: 0;
     }
 
-    .GameNumber {
-        font-size: 3rem;
+    .AppHeader {
+        font-size: 5rem;
+        margin: auto;
+        padding: 1rem;
     }
 
     .PlayerContainer {
         display: flex;
         flex-direction: row;
+        margin: 1rem;
         .Player {
             padding: 1rem;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
@@ -39,9 +42,9 @@
     }
 
     .GameCell {
-        width: 7rem;
-        height: 7rem;
-        font-size: 3rem;
+        width: 9rem;
+        height: 9rem;
+        font-size: 5rem;
         cursor: pointer;
         background: #ececec;
         border: none;
@@ -49,7 +52,9 @@
     }
 
     .GameStatus {
-        margin: 3rem;
-        font-size: 2rem;
+        margin: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #158e84;
     }
 }
