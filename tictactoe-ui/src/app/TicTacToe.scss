@@ -1,0 +1,55 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .AppHeader {
+        font-size: 5rem;
+        margin-bottom: 0;
+    }
+
+    .GameNumber {
+        font-size: 3rem;
+    }
+
+    .PlayerContainer {
+        display: flex;
+        flex-direction: row;
+        .Player {
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+
+    .StartButton {
+        font-size: 1.5rem;
+        margin: 2rem;
+        cursor: pointer;
+        background: #20968b;
+        padding: 0.7rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: white;
+    }
+
+    .StartButton:disabled {
+        background: #76bfb7;
+        cursor: not-allowed;
+    }
+
+    .GameCell {
+        width: 7rem;
+        height: 7rem;
+        font-size: 3rem;
+        cursor: pointer;
+        background: #ececec;
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    .GameStatus {
+        margin: 3rem;
+        font-size: 2rem;
+    }
+}

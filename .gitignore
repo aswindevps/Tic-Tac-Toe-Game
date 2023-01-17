@@ -3,3 +3,6 @@
 # Server
 target/
 .idea/
+
+# UI
+node_modules/
