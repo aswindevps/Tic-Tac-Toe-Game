@@ -31,13 +31,15 @@ Overall, TicTacToe is a fun and easy-to-play game that can be enjoyed by players
 - `mvn clean install`
 - `cd target`
 - `java -jar tictactoe-0.0.1-SNAPSHOT.jar`
+
   > Runs Tic-Tac-Toe server.
-  > URL: [http://localhost:8080](http://localhost:8080).
+  > Open [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) to view API documentation.
 
 ### Tic-Tac-Toe UI
 
 - `cd tictactoe-ui`
 - `npm install` or `yarn`
 - `npm start` or `yarn start`
-  > Runs Tic-Tac-Toe UI
-  > Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+  > Runs Tic-Tac-Toe UI.
+  > Open [http://localhost:3000](http://localhost:3000) to view game in your browser.
